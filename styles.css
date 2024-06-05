@@ -1,3 +1,9 @@
+To make the CSS styles look fancier, you can add more sophisticated styles such as shadows, gradients, hover effects, and better typography. Here’s an enhanced version of the `styles.css` with these improvements:
+
+### Enhanced `styles.css`
+
+```css
+/* General Reset and Body Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +11,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #fff8dc;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -16,21 +23,123 @@ body {
     padding: 20px;
 }
 
+/* Header Styles */
 header {
     background-color: #ffdd57;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
 }
 
 header h1 {
     text-align: center;
     color: #333;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 10px 0;
 }
 
 nav ul li {
-    margin: 0 
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #ffdd57;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.podcast-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.podcast {
+    background-color: #ffeb85;
+    border: 1px solid #ffdd57;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.podcast:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.podcast img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.podcast h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.podcast a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.podcast a:hover {
+    color: #ffdd57;
+}
+
+/* Podcast Detail Page Styles */
+.podcast-detail {
+    text-align: center;
+}
+
+.podcast-detail img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #ffeb85;
+    border: 1px solid #ffdd57;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review h4 {
+    margin-bottom:
